@@ -13,7 +13,7 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 def load_data():
-    df = pd.read_csv('C:/Users/Dell/.py file/HHS Processed dataset.csv')
+    df = pd.read_csv('HHS Processed dataset.csv')
     df['Date'] = pd.to_datetime(df['Date'],format='%d-%m-%Y',errors='coerce')
     return df
 
